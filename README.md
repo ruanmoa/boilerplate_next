@@ -15,7 +15,6 @@ This boilerplate is using the framework Jest to run tests.
 To run :
 ```bash
 yarn test
-or
-//to keep watching the tests
+or to keep watching the tests running
 yarn test:watch
 ```
