@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -17,7 +18,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix", "yarn test --bail"
+      "yarn lint --fix",
+      "yarn test --bail"
     ]
   },
   "dependencies": {
@@ -39,10 +41,10 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.0",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "husky": "^7.0.0"
   }
 }
